@@ -1,11 +1,13 @@
-var arr1 = [[1, 1, 1, 1, 1],[1, 1, 1, 1, 1]];
-
-function arrMatrix (arr){
-	for (var i = 0; i < arr.length - 1; i++) {
-		for (var j = 0; j < arr[i].length; j++) {
-			console.log(arr[j]);
-		}
+function arrMatrix (){
+	var arr1 = [];
+	for (var i = 0; i < 2; i++) {
+		arr1[i] = [];
+		for (var j = 0; j < 5; j++) {
+			arr1[i].push(1);
+		}		
 	}
+	return arr1;
 }
 
-arrMatrix(arr1);
+console.log(arrMatrix()[0]);
+console.log(arrMatrix()[1]);
