@@ -19,12 +19,25 @@ function generateMatrix(){
 
 function drawMatrix(array) {
 	for (var i = 0; i < array.length; i++) {
+		console.log(i);
 		document.write(array[i].join(' ') + '<br>');
 	}
 }
 
+function generateView(array){
+	document.write('<table>');
+	for (var i = 0; i < array.length; i++) {
+		document.write('<tr>');
+		for (var j = 0; j < array[i].length; j++) {
+			document.write('<td>' + array[i][j] + '</td>');
+		}
+		document.write('</tr>');
+	}
+	document.write('</table>');
+}
 
 
 var my_array = generateMatrix();
 drawMatrix(my_array);
 
+generateView(my_array);
