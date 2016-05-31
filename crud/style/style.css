@@ -11,3 +11,7 @@ button {
 .table {
 	margin-top: 5px;
 }
+
+label {
+	width: 90px;
+}

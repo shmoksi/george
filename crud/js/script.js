@@ -14,11 +14,14 @@ var users = [
 ]
 
 $(document).ready(function(){
-	$('.col-1').prepend('<button type="button" class="btn btn-green">Add new user</button>');
-	$('.btn-green').click(function() {
-		console.log('click');
+	$('.btn-green').on('click', function() {
+		$('#myModal').modal();
 	});
-
+	
+		
+	
+	
+	
 	$.each(users, function() {
 		$('.table').append('<tr><td>' 
 			+ this.name + '</td><td>' 
