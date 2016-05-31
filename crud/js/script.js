@@ -16,7 +16,7 @@ var users = [
 $(document).ready(function(){
 	$('.btn-green').on('click', function() {
 		$('#myModal').modal();
-	});
+	}); 
 	
 		
 	
