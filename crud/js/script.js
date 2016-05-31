@@ -18,17 +18,12 @@ $(document).ready(function(){
 		$('#myModal').modal();
 	}); 
 	
-		
-	
-	
-	
 	$.each(users, function() {
-		$('.table').append('<tr><td>' 
-			+ this.name + '</td><td>' 
-			+ this.age + '</td><td>' 
+		$('.table').append('<tr><td>'
+			+ this.name + '</td><td>'
+			+ this.age + '</td><td>'
 			+ this.email + '</td><td><button type="button" class="btn btn-primary">Edit</button><button type="button" class="btn btn-danger">Delete</button></td></tr>');
 
 	});
-
 });
 
